@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.h5
+*.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+
+# IDE (PyCharm)
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Data and models (large files)
+*.csv
+*.xlsx
+*.zip
+*.tar
+*.gz
+*.npy
+*.npz
+*.sav
+*.pth
+*.pt
+
+# Specific project folders
+UrlPhishing/data/
+UrlPhishing/pred/
