@@ -1,0 +1,75 @@
+import SwiftUI
+
+struct ContentView: View {
+    @State private var recipient: String = ""
+    @State private var message: String = ""
+    @State private var showPreview = false
+    
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 20) {
+                Text("Valentine's Letter")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding()
+                
+                TextField("Recipient's Name", text: $recipient)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                TextEditor(text: $message)
+                    .frame(height: 200)
+                    .border(Color.gray, width: 1)
+                    .cornerRadius(8)
+                    .padding()
+                
+                Button(action: {
+                    showPreview = true
+                }) {
+                    Text("Preview Letter")
+                        .font(.title2)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.pink)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding(.horizontal)
+                }
+                .sheet(isPresented: $showPreview) {
+                    PreviewView(recipient: recipient, message: message)
+                }
+            }
+            .padding()
+        }
+    }
+}
+
+struct PreviewView: View {
+    var recipient: String
+    var message: String
+    
+    var body: some View {
+        VStack {
+            Text("Dear \(recipient),")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding()
+            
+            Text(message)
+                .padding()
+                .font(.body)
+            
+            Spacer()
+        }
+        .padding()
+    }
+}
+
+@main
+struct ValentineApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}

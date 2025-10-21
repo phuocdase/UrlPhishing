@@ -1,0 +1,26 @@
+{
+  "f1": 0.9294952436145703,
+  "precision": 0.9442027424797186,
+  "recall": 0.9152389038121617,
+  "auc": 0.9879162646096084,
+  "best_params": {
+    "colsample_bytree": 0.5753587719827147,
+    "learning_rate": 0.16721366971999405,
+    "max_depth": 11,
+    "min_child_weight": 3,
+    "n_estimators": 347,
+    "reg_alpha": 0.16297945260094238,
+    "reg_lambda": 0.4404820951310966,
+    "subsample": 0.9133448597314053
+  },
+  "n_features": 29,
+  "version_xgboost": "3.0.5",
+  "device_used": "cuda",
+  "search_subsample": 1.0,
+  "cv": 3,
+  "n_iter": 25,
+  "n_jobs_search": 1,
+  "calibration": "sigmoid",
+  "best_threshold": 0.44000000000000006,
+  "best_f1_at_best_threshold": 0.9297869498899956
+}

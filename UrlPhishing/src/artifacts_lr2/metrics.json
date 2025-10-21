@@ -1,0 +1,24 @@
+{
+  "f1": 0.9193183510506272,
+  "precision": 0.9371764841965241,
+  "recall": 0.9021280741555207,
+  "auc": 0.9837593710647171,
+  "best_C": 0.3,
+  "vectorizer": {
+    "analyzer": "char_wb",
+    "ngram_range": [
+      3,
+      4
+    ],
+    "max_features": 30000,
+    "min_df": 3,
+    "binary": false,
+    "lowercase": false
+  },
+  "n_num_features": 29,
+  "cv": 3,
+  "search_subsample": 0.3,
+  "calibration": "sigmoid",
+  "best_threshold": 0.51,
+  "best_f1_at_best_threshold": 0.9194033244973812
+}
