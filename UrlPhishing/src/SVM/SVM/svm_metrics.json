@@ -1,0 +1,46 @@
+{
+  "model": "sgd",
+  "best_params": {
+    "clf__alpha": 0.00029507066707905316,
+    "clf__l1_ratio": 0.6116531604882809,
+    "clf__penalty": "l2"
+  },
+  "label_map": {
+    "0": "Legitimate",
+    "1": "Phishing"
+  },
+  "feature_count": 29,
+  "val_metrics": {
+    "auc": 0.8948657194497573,
+    "default": {
+      "threshold": 0.5,
+      "f1": 0.6199321938126854,
+      "precision": 0.9586063783311489,
+      "recall": 0.45808977035490606
+    },
+    "best_threshold": 0.30000000000000004,
+    "best_metrics": {
+      "threshold": 0.30000000000000004,
+      "f1": 0.8013774443487885,
+      "precision": 0.7578506629448709,
+      "recall": 0.8502087682672234
+    }
+  },
+  "test_metrics": {
+    "auc": 0.8942768808080006,
+    "default": {
+      "threshold": 0.5,
+      "f1": 0.6201110472186349,
+      "precision": 0.9608261275999065,
+      "recall": 0.4577795098052861
+    },
+    "fixed_threshold": 0.30000000000000004,
+    "fixed_metrics": {
+      "threshold": 0.30000000000000004,
+      "f1": 0.7997504596795377,
+      "precision": 0.7570837115042708,
+      "recall": 0.8475135353310415
+    }
+  },
+  "chosen_threshold": 0.30000000000000004
+}

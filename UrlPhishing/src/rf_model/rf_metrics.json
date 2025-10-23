@@ -1,0 +1,23 @@
+{
+  "f1": 0.9284570359557249,
+  "precision": 0.9457477370829664,
+  "recall": 0.9117872204206043,
+  "auc": 0.9879717183011195,
+  "best_params": {
+    "n_estimators": 244,
+    "max_depth": 29,
+    "max_features": 0.5,
+    "bootstrap": false,
+    "n_bins": 128,
+    "min_samples_split": 4,
+    "min_samples_leaf": 7,
+    "split_criterion": "gini",
+    "random_state": null
+  },
+  "scaler": {
+    "used": true,
+    "class": "cuml.preprocessing.StandardScaler"
+  },
+  "best_threshold": 0.44000000000000006,
+  "best_f1_at_best_threshold": 0.9292851598828062
+}
